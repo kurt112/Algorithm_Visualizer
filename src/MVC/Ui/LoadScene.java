@@ -124,7 +124,7 @@ public class LoadScene {
         controller.getSource_color().setValue(Color.valueOf(visualizer_properties.getColor_nodes().getSource_color(false)));
         controller.getUnvisited_color().setValue(Color.valueOf(visualizer_properties.getColor_nodes().getUnvisited_color(false)));
         controller.getSearching_color().setValue(Color.valueOf(visualizer_properties.getColor_nodes().getFinding_color(false)));
-        controller.getDelay_value().setText(""+ visualizer_properties.getAnimation_delay().getDelay());
+        controller.getDelay_value().setText(""+ visualizer_properties.getAnimation_delay().getPath_delay());
         controller.setVisualizer_properties(visualizer_properties);
     }
 

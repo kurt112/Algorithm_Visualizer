@@ -7,7 +7,11 @@ import javafx.scene.control.ColorPicker;
 import javafx.scene.control.TextField;
 
 public class ColorAnimation_Controller {
+
     //---------------------------------------- Variable ----------------------------------------------
+    @FXML private TextField searching_delay;
+    @FXML private TextField path_delay;
+
     @FXML
     private ColorPicker source_color;
 
@@ -26,8 +30,6 @@ public class ColorAnimation_Controller {
     @FXML
     private ColorPicker block_color;
 
-    @FXML
-    private TextField delay_value;
 
 
     private Visualizer_Properties visualizer_properties;
@@ -64,11 +66,16 @@ public class ColorAnimation_Controller {
         visualizer_properties.getColor_nodes().setBlock_color(block_color.getValue().toString());
 
         try {
-            visualizer_properties.getAnimation_delay().setDelay(Long.parseLong(delay_value.getText()));
+            visualizer_properties.getAnimation_delay().setPath_delay(Long.parseLong(path_delay.getText()));
         }catch (NumberFormatException | NullPointerException e){
             Alert_Information();
         }
 
+        try {
+            visualizer_properties.getAnimation_delay().setPath_delay(Long.parseLong(searching_delay.getText()));
+        }catch (NumberFormatException | NullPointerException e){
+            Alert_Information();
+        }
         visualizer_properties.Create_Map();
 
     }
@@ -109,13 +116,16 @@ public class ColorAnimation_Controller {
         return block_color;
     }
 
-    public TextField getDelay_value() {
-        return delay_value;
-    }
-
-
     public void setVisualizer_properties(Visualizer_Properties visualizer_properties) {
         this.visualizer_properties = visualizer_properties;
+    }
+
+    public TextField getSearching_delay() {
+        return searching_delay;
+    }
+
+    public TextField getPath_delay() {
+        return path_delay;
     }
 
     //---------------------------------------- End of Getter Setter ----------------------------------------------
