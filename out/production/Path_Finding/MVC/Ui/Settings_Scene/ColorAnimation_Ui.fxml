@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="524.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MVC.Conroller.Settings_Controller.ColorAnimation_Controller">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Color and Animation Delay">
+         <font>
+            <Font name="Segoe UI Semibold" size="17.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="15.0" />
+         </VBox.margin>
+      </Text>
+      <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="600.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Coloright">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="25.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Segoe UI Semibold" size="12.0" />
+               </font>
+            </Text>
+            <Separator prefHeight="14.0" prefWidth="458.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets top="3.0" />
+               </HBox.margin>
+            </Separator>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="524.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Source ">
+               <font>
+                  <Font name="Segoe UI Semibold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" right="20.0" />
+               </HBox.margin>
+            </Text>
+            <ColorPicker fx:id="source_color" prefHeight="31.0" prefWidth="126.0">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </ColorPicker>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Destination ">
+               <font>
+                  <Font name="Segoe UI Semibold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Text>
+            <ColorPicker fx:id="destination_color" prefHeight="31.0" prefWidth="126.0" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="524.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Path">
+               <font>
+                  <Font name="Segoe UI Semibold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" right="35.0" />
+               </HBox.margin>
+            </Text>
+            <ColorPicker fx:id="path_color" prefHeight="31.0" prefWidth="126.0">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </ColorPicker>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Searching">
+               <font>
+                  <Font name="Segoe UI Semibold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+            </Text>
+            <ColorPicker fx:id="searching_color" prefHeight="31.0" prefWidth="126.0" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="524.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Unvisited">
+               <font>
+                  <Font name="Segoe UI Semibold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" right="10.0" />
+               </HBox.margin>
+            </Text>
+            <ColorPicker fx:id="unvisited_color" prefHeight="31.0" prefWidth="126.0">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </ColorPicker>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Block">
+               <font>
+                  <Font name="Segoe UI Semibold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="48.0" />
+               </HBox.margin>
+            </Text>
+            <ColorPicker fx:id="block_color" prefHeight="31.0" prefWidth="126.0" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="600.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Animation Delay">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="25.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Segoe UI Semibold" size="12.0" />
+               </font>
+            </Text>
+            <Separator prefHeight="10.0" prefWidth="418.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets top="3.0" />
+               </HBox.margin>
+            </Separator>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="600.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Delay">
+               <font>
+                  <Font name="Segoe UI Semibold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" right="10.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="delay_value">
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <JFXButton onAction="#Button_Ok" prefHeight="34.0" prefWidth="81.0" style="-fx-background-color: #5bc0de;" text="OK" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" right="10.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton onAction="#Button_Cancel" prefHeight="34.0" prefWidth="81.0" style="-fx-background-color: #d9534f;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" right="10.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton onAction="#Button_Apply" prefHeight="34.0" prefWidth="81.0" style="-fx-background-color: #5cb85c;" text="Apply" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</VBox>

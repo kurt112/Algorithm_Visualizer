@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox fx:id="parent" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MVC.Conroller.MainBorder">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="Setting_Menu" mnemonicParsing="false" text="Settings" onAction="#Settings_Open" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Action">
+            <items>
+                <MenuItem onAction="#Default_Map" mnemonicParsing="false" text="Default Setting" />
+                <MenuItem onAction="#Reset" mnemonicParsing="false" text="Reset" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+         <VBox fx:id="vbox" prefHeight="343.0" prefWidth="600.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="58.0" prefWidth="600.0" style="-fx-background-color: #dfe3ee;">
+         <children>
+            <JFXButton fx:id="button" onMouseClicked="#start" prefHeight="19.0" prefWidth="98.0" ripplerFill="BLACK" style="-fx-background-color: #5cb85c;" text="Start" textFill="WHITE">
+               <font>
+                  <Font name="Segoe MVC.Ui" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</VBox>
